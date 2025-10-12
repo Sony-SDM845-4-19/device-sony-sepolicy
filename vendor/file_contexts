@@ -59,72 +59,72 @@
 /dev/socket/dpmd                                u:object_r:dpmd_socket:s0
 
 # files in /odm
-/odm/bin/hw/vendor\.qti\.spu@1\.0-service                         u:object_r:spu_exec:s0
-/odm/bin/hw/vendor\.qti\.hardware\.qseecom@1\.0-service           u:object_r:tee_exec:s0
-/odm/bin/hw/vendor\.qti\.camera\.provider-service_64              u:object_r:hal_camera_default_exec:s0
-/odm/bin/hw/vendor\.qti\.media\.c2@1\.0-service                   u:object_r:c2_exec:s0
-/odm/bin/hw/vendor\.somc\.hardware\.modemswitcher@1\.0-service    u:object_r:hal_modemsw_default_exec:s0
-/odm/bin/hw/vendor\.somc\.hardware\.miscta@1\.0-service           u:object_r:hal_miscta_default_exec:s0
-/odm/bin/hw/android\.hardware\.authsecret@1\.0-service-qti        u:object_r:hal_authsecret_default_exec:s0
-/odm/bin/hw/android\.hardware\.gatekeeper@1\.[0-9]+-service-qti   u:object_r:hal_gatekeeper_default_exec:s0
-/odm/bin/hw/android\.hardware\.keymaster@4\.[0-9]+-service-qti    u:object_r:hal_keymaster_default_exec:s0
-/odm/bin/hw/android\.hardware\.security\.keymint-service-qti      u:object_r:hal_keymint_default_exec:s0
-/odm/bin/ATFWD-daemon                           u:object_r:atfwd_daemon_exec:s0
-/odm/bin/adpl                                   u:object_r:adpl_exec:s0
-/odm/bin/adsprpcd                               u:object_r:adsprpcd_exec:s0
-/odm/bin/cdsprpcd                               u:object_r:cdsprpcd_exec:s0
-/odm/bin/cnd                                    u:object_r:cnd_exec:s0
-/odm/bin/diag-router                            u:object_r:diag_exec:s0
-/odm/bin/dpmQmiMgr                              u:object_r:dpmqmimgr_exec:s0
-/odm/bin/vendor.dpmd                            u:object_r:dpmd_exec:s0
-/odm/bin/dspservice                             u:object_r:dspservice_exec:s0
-/odm/bin/hvdcp_opti                             u:object_r:hvdcp_opti_exec:s0
-/odm/bin/ims_rtp_daemon                         u:object_r:hal_imsrtp_exec:s0
-/odm/bin/imsdaemon                              u:object_r:ims_exec:s0
-/odm/bin/imsdatadaemon                          u:object_r:ims_exec:s0
-/odm/bin/imsqmidaemon                           u:object_r:ims_exec:s0
-/odm/bin/imsrcsd                                u:object_r:ims_exec:s0
-/odm/bin/irsc_util                              u:object_r:irsc_util_exec:s0
-/odm/bin/ks                                     u:object_r:ks_exec:s0
-/odm/bin/mdm_helper                             u:object_r:mdm_helper_exec:s0
-/odm/bin/mlog_qmi_service                       u:object_r:mlog_qmi_exec:s0
-/odm/bin/modemManager                           u:object_r:mdmmgr_exec:s0
-/odm/bin/msm_irqbalance                         u:object_r:msm_irqbalance_exec:s0
-/odm/bin/mstatdaemon                            u:object_r:mstat_exec:s0
-/odm/bin/netmgrd                                u:object_r:netmgrd_exec:s0
-/odm/bin/port-bridge                            u:object_r:port_bridge_exec:s0
-/odm/bin/pm-service                             u:object_r:per_mgr_exec:s0
-/odm/bin/pm-proxy                               u:object_r:per_proxy_exec:s0
-/odm/bin/pd-mapper                              u:object_r:pd_mapper_exec:s0
-/odm/bin/hw/qcrild                              u:object_r:rild_exec:s0
-/odm/bin/hw/qcrilNrd                            u:object_r:rild_exec:s0
-/odm/bin/qesdk-manager                          u:object_r:qesd_exec:s0
-/odm/bin/qconfigservice                         u:object_r:qconfig_exec:s0
-/odm/bin/qmuxd                                  u:object_r:qmuxd_exec:s0
-/odm/bin/qmipriod                               u:object_r:qmipriod_exec:s0
-/odm/bin/qrtr-ns                                u:object_r:qrtr_exec:s0
-/odm/bin/qseecomd                               u:object_r:tee_exec:s0
-/odm/bin/qti                                    u:object_r:qti_exec:s0
-/odm/bin/rmt_storage                            u:object_r:rmt_storage_exec:s0
-/odm/bin/shsusrd                                u:object_r:shsusrd_exec:s0
-/odm/bin/sct_service                            u:object_r:sct_exec:s0
-/odm/bin/sensors\.qcom                          u:object_r:sensors_exec:s0
-/odm/bin/sensors-qesdk                          u:object_r:sensors_exec:s0
-/odm/bin/sony-modem-switcher                    u:object_r:modemsw_exec:s0
-/odm/bin/sscrpcd                                u:object_r:sscrpcd_exec:s0
-/odm/bin/tad                                    u:object_r:tad_exec:s0
-/odm/bin/ta_qmi_service                         u:object_r:ta_qmi_exec:s0
-/odm/bin/tftp_server                            u:object_r:tad_exec:s0
-/odm/bin/cnss-daemon                            u:object_r:wcnss_service_exec:s0
-/odm/bin/wfdvndservice                          u:object_r:c2_exec:s0
-/odm/bin/wifidisplayhalservice                  u:object_r:c2_exec:s0
-/odm/bin/wfdhdcphalservice                      u:object_r:c2_exec:s0
-/odm/firmware(/.*)?                             u:object_r:vendor_firmware_file:s0
+/(vendor/odm|vendor)/bin/hw/vendor\.qti\.spu@1\.0-service                         u:object_r:spu_exec:s0
+/(vendor/odm|vendor)/bin/hw/vendor\.qti\.hardware\.qseecom@1\.0-service           u:object_r:tee_exec:s0
+/(vendor/odm|vendor)/bin/hw/vendor\.qti\.camera\.provider-service_64              u:object_r:hal_camera_default_exec:s0
+/(vendor/odm|vendor)/bin/hw/vendor\.qti\.media\.c2@1\.0-service                   u:object_r:c2_exec:s0
+/(vendor/odm|vendor)/bin/hw/vendor\.somc\.hardware\.modemswitcher@1\.0-service    u:object_r:hal_modemsw_default_exec:s0
+/(vendor/odm|vendor)/bin/hw/vendor\.somc\.hardware\.miscta@1\.0-service           u:object_r:hal_miscta_default_exec:s0
+/(vendor/odm|vendor)/bin/hw/android\.hardware\.authsecret@1\.0-service-qti        u:object_r:hal_authsecret_default_exec:s0
+/(vendor/odm|vendor)/bin/hw/android\.hardware\.gatekeeper@1\.[0-9]+-service-qti   u:object_r:hal_gatekeeper_default_exec:s0
+/(vendor/odm|vendor)/bin/hw/android\.hardware\.keymaster@4\.[0-9]+-service-qti    u:object_r:hal_keymaster_default_exec:s0
+/(vendor/odm|vendor)/bin/hw/android\.hardware\.security\.keymint-service-qti      u:object_r:hal_keymint_default_exec:s0
+/(vendor/odm|vendor)/bin/ATFWD-daemon                           u:object_r:atfwd_daemon_exec:s0
+/(vendor/odm|vendor)/bin/adpl                                   u:object_r:adpl_exec:s0
+/(vendor/odm|vendor)/bin/adsprpcd                               u:object_r:adsprpcd_exec:s0
+/(vendor/odm|vendor)/bin/cdsprpcd                               u:object_r:cdsprpcd_exec:s0
+/(vendor/odm|vendor)/bin/cnd                                    u:object_r:cnd_exec:s0
+/(vendor/odm|vendor)/bin/diag-router                            u:object_r:diag_exec:s0
+/(vendor/odm|vendor)/bin/dpmQmiMgr                              u:object_r:dpmqmimgr_exec:s0
+/(vendor/odm|vendor)/bin/vendor.dpmd                            u:object_r:dpmd_exec:s0
+/(vendor/odm|vendor)/bin/dspservice                             u:object_r:dspservice_exec:s0
+/(vendor/odm|vendor)/bin/hvdcp_opti                             u:object_r:hvdcp_opti_exec:s0
+/(vendor/odm|vendor)/bin/ims_rtp_daemon                         u:object_r:hal_imsrtp_exec:s0
+/(vendor/odm|vendor)/bin/imsdaemon                              u:object_r:ims_exec:s0
+/(vendor/odm|vendor)/bin/imsdatadaemon                          u:object_r:ims_exec:s0
+/(vendor/odm|vendor)/bin/imsqmidaemon                           u:object_r:ims_exec:s0
+/(vendor/odm|vendor)/bin/imsrcsd                                u:object_r:ims_exec:s0
+/(vendor/odm|vendor)/bin/irsc_util                              u:object_r:irsc_util_exec:s0
+/(vendor/odm|vendor)/bin/ks                                     u:object_r:ks_exec:s0
+/(vendor/odm|vendor)/bin/mdm_helper                             u:object_r:mdm_helper_exec:s0
+/(vendor/odm|vendor)/bin/mlog_qmi_service                       u:object_r:mlog_qmi_exec:s0
+/(vendor/odm|vendor)/bin/modemManager                           u:object_r:mdmmgr_exec:s0
+/(vendor/odm|vendor)/bin/msm_irqbalance                         u:object_r:msm_irqbalance_exec:s0
+/(vendor/odm|vendor)/bin/mstatdaemon                            u:object_r:mstat_exec:s0
+/(vendor/odm|vendor)/bin/netmgrd                                u:object_r:netmgrd_exec:s0
+/(vendor/odm|vendor)/bin/port-bridge                            u:object_r:port_bridge_exec:s0
+/(vendor/odm|vendor)/bin/pm-service                             u:object_r:per_mgr_exec:s0
+/(vendor/odm|vendor)/bin/pm-proxy                               u:object_r:per_proxy_exec:s0
+/(vendor/odm|vendor)/bin/pd-mapper                              u:object_r:pd_mapper_exec:s0
+/(vendor/odm|vendor)/bin/hw/qcrild                              u:object_r:rild_exec:s0
+/(vendor/odm|vendor)/bin/hw/qcrilNrd                            u:object_r:rild_exec:s0
+/(vendor/odm|vendor)/bin/qesdk-manager                          u:object_r:qesd_exec:s0
+/(vendor/odm|vendor)/bin/qconfigservice                         u:object_r:qconfig_exec:s0
+/(vendor/odm|vendor)/bin/qmuxd                                  u:object_r:qmuxd_exec:s0
+/(vendor/odm|vendor)/bin/qmipriod                               u:object_r:qmipriod_exec:s0
+/(vendor/odm|vendor)/bin/qrtr-ns                                u:object_r:qrtr_exec:s0
+/(vendor/odm|vendor)/bin/qseecomd                               u:object_r:tee_exec:s0
+/(vendor/odm|vendor)/bin/qti                                    u:object_r:qti_exec:s0
+/(vendor/odm|vendor)/bin/rmt_storage                            u:object_r:rmt_storage_exec:s0
+/(vendor/odm|vendor)/bin/shsusrd                                u:object_r:shsusrd_exec:s0
+/(vendor/odm|vendor)/bin/sct_service                            u:object_r:sct_exec:s0
+/(vendor/odm|vendor)/bin/sensors\.qcom                          u:object_r:sensors_exec:s0
+/(vendor/odm|vendor)/bin/sensors-qesdk                          u:object_r:sensors_exec:s0
+/(vendor/odm|vendor)/bin/sony-modem-switcher                    u:object_r:modemsw_exec:s0
+/(vendor/odm|vendor)/bin/sscrpcd                                u:object_r:sscrpcd_exec:s0
+/(vendor/odm|vendor)/bin/tad                                    u:object_r:tad_exec:s0
+/(vendor/odm|vendor)/bin/ta_qmi_service                         u:object_r:ta_qmi_exec:s0
+/(vendor/odm|vendor)/bin/tftp_server                            u:object_r:tad_exec:s0
+/(vendor/odm|vendor)/bin/cnss-daemon                            u:object_r:wcnss_service_exec:s0
+/(vendor/odm|vendor)/bin/wfdvndservice                          u:object_r:c2_exec:s0
+/(vendor/odm|vendor)/bin/wifidisplayhalservice                  u:object_r:c2_exec:s0
+/(vendor/odm|vendor)/bin/wfdhdcphalservice                      u:object_r:c2_exec:s0
+/(vendor/odm|vendor)/firmware(/.*)?                             u:object_r:vendor_firmware_file:s0
 
 # Files on /odm to be bind-mounted to /system_ext
-/odm/system_ext/app(/.*)?                       u:object_r:vendor_app_file:s0
-/odm/system_ext/priv-app(/.*)?                  u:object_r:vendor_app_file:s0
-/odm/system_ext/framework(/.*)?                 u:object_r:vendor_framework_file:s0
+/(vendor/odm|vendor)/system_ext/app(/.*)?                       u:object_r:vendor_app_file:s0
+/(vendor/odm|vendor)/system_ext/priv-app(/.*)?                  u:object_r:vendor_app_file:s0
+/(vendor/odm|vendor)/system_ext/framework(/.*)?                 u:object_r:vendor_framework_file:s0
 
 # files in /vendor
 /(system/vendor|vendor)/rfs(/.*)?                                                            u:object_r:rfs_system_file:s0
@@ -182,96 +182,96 @@
 ###############################################
 # same-process HAL files and their dependencies
 #
-/(system/vendor|vendor|odm)/lib(64)?/hw/gralloc\.msm89(52|96|98)\.so  u:object_r:same_process_hal_file:s0
-/(system/vendor|vendor|odm)/lib(64)?/hw/gralloc\.sdm(660|845)\.so     u:object_r:same_process_hal_file:s0
-/(system/vendor|vendor|odm)/lib(64)?/hw/gralloc\.sm(8[12]50|6125)\.so u:object_r:same_process_hal_file:s0
-/(system/vendor|vendor|odm)/lib(64)?/libqdMetaData(\.legacy)?\.so     u:object_r:same_process_hal_file:s0
-/(system/vendor|vendor|odm)/lib(64)?/libqservice\.so                  u:object_r:same_process_hal_file:s0
-/(system/vendor|vendor|odm)/lib(64)?/libqdutils\.so                   u:object_r:same_process_hal_file:s0
-/(system/vendor|vendor|odm)/lib(64)?/libadreno_utils\.so              u:object_r:same_process_hal_file:s0
-/(system/vendor|vendor|odm)/lib(64)?/libgsl\.so                       u:object_r:same_process_hal_file:s0
+/(system/vendor|vendor|odm|vendor/odm)/lib(64)?/hw/gralloc\.msm89(52|96|98)\.so  u:object_r:same_process_hal_file:s0
+/(system/vendor|vendor|odm|vendor/odm)/lib(64)?/hw/gralloc\.sdm(660|845)\.so     u:object_r:same_process_hal_file:s0
+/(system/vendor|vendor|odm|vendor/odm)/lib(64)?/hw/gralloc\.sm(8[12]50|6125)\.so u:object_r:same_process_hal_file:s0
+/(system/vendor|vendor|odm|vendor/odm)/lib(64)?/libqdMetaData(\.legacy)?\.so     u:object_r:same_process_hal_file:s0
+/(system/vendor|vendor|odm|vendor/odm)/lib(64)?/libqservice\.so                  u:object_r:same_process_hal_file:s0
+/(system/vendor|vendor|odm|vendor/odm)/lib(64)?/libqdutils\.so                   u:object_r:same_process_hal_file:s0
+/(system/vendor|vendor|odm|vendor/odm)/lib(64)?/libadreno_utils\.so              u:object_r:same_process_hal_file:s0
+/(system/vendor|vendor|odm|vendor/odm)/lib(64)?/libgsl\.so                       u:object_r:same_process_hal_file:s0
 
-/(system/vendor|vendor|odm)/lib(64)?/hw/vulkan\.msm89(52|96|98)\.so   u:object_r:same_process_hal_file:s0
-/(system/vendor|vendor|odm)/lib(64)?/hw/vulkan\.sdm(660|845)\.so      u:object_r:same_process_hal_file:s0
-/(system/vendor|vendor|odm)/lib(64)?/hw/vulkan\.sm(8[12]50|6125)\.so  u:object_r:same_process_hal_file:s0
-/(system/vendor|vendor|odm)/lib(64)?/hw/vulkan\.qcom\.so              u:object_r:same_process_hal_file:s0
-/(system/vendor|vendor|odm)/lib(64)?/(egl/)?libEGL_adreno\.so         u:object_r:same_process_hal_file:s0
-/(system/vendor|vendor|odm)/lib(64)?/(egl/)?libGLESv1_CM_adreno\.so   u:object_r:same_process_hal_file:s0
-/(system/vendor|vendor|odm)/lib(64)?/(egl/)?libGLESv2_adreno\.so      u:object_r:same_process_hal_file:s0
+/(system/vendor|vendor|odm|vendor/odm)/lib(64)?/hw/vulkan\.msm89(52|96|98)\.so   u:object_r:same_process_hal_file:s0
+/(system/vendor|vendor|odm|vendor/odm)/lib(64)?/hw/vulkan\.sdm(660|845)\.so      u:object_r:same_process_hal_file:s0
+/(system/vendor|vendor|odm|vendor/odm)/lib(64)?/hw/vulkan\.sm(8[12]50|6125)\.so  u:object_r:same_process_hal_file:s0
+/(system/vendor|vendor|odm|vendor/odm)/lib(64)?/hw/vulkan\.qcom\.so              u:object_r:same_process_hal_file:s0
+/(system/vendor|vendor|odm|vendor/odm)/lib(64)?/(egl/)?libEGL_adreno\.so         u:object_r:same_process_hal_file:s0
+/(system/vendor|vendor|odm|vendor/odm)/lib(64)?/(egl/)?libGLESv1_CM_adreno\.so   u:object_r:same_process_hal_file:s0
+/(system/vendor|vendor|odm|vendor/odm)/lib(64)?/(egl/)?libGLESv2_adreno\.so      u:object_r:same_process_hal_file:s0
 
 # libGLESv2_adreno depends on this
-/(system/vendor|vendor|odm)/lib(64)?/libllvm-glnext\.so               u:object_r:same_process_hal_file:s0
+/(system/vendor|vendor|odm|vendor/odm)/lib(64)?/libllvm-glnext\.so               u:object_r:same_process_hal_file:s0
 
-/(system/vendor|vendor|odm)/lib(64)?/libdrmutils\.so                  u:object_r:same_process_hal_file:s0
-/(system/vendor|vendor|odm)/lib(64)?/libdrm\.so                       u:object_r:same_process_hal_file:s0
+/(system/vendor|vendor|odm|vendor/odm)/lib(64)?/libdrmutils\.so                  u:object_r:same_process_hal_file:s0
+/(system/vendor|vendor|odm|vendor/odm)/lib(64)?/libdrm\.so                       u:object_r:same_process_hal_file:s0
 
 # libOpenCL and its dependencies
-/(system/vendor|vendor|odm)/lib(64)?/(egl/)?libq3dtools_adreno\.so    u:object_r:same_process_hal_file:s0
-/(system/vendor|vendor|odm)/lib(64)?/libOpenCL\.so                    u:object_r:same_process_hal_file:s0
+/(system/vendor|vendor|odm|vendor/odm)/lib(64)?/(egl/)?libq3dtools_adreno\.so    u:object_r:same_process_hal_file:s0
+/(system/vendor|vendor|odm|vendor/odm)/lib(64)?/libOpenCL\.so                    u:object_r:same_process_hal_file:s0
 
 # loaded by native loader (zygote) for all processes
-/(system/vendor|vendor|odm)/lib(64)?/libadsprpc\.so                   u:object_r:same_process_hal_file:s0
-/(system/vendor|vendor|odm)/lib(64)?/libcdsprpc\.so                   u:object_r:same_process_hal_file:s0
-/(system/vendor|vendor|odm)/lib(64)?/libsdsprpc\.so                   u:object_r:same_process_hal_file:s0
-/(system/vendor|vendor|odm)/lib(64)?/libgralloccore\.so               u:object_r:same_process_hal_file:s0
-/(system/vendor|vendor|odm)/lib(64)?/libgrallocutils\.so              u:object_r:same_process_hal_file:s0
+/(system/vendor|vendor|odm|vendor/odm)/lib(64)?/libadsprpc\.so                   u:object_r:same_process_hal_file:s0
+/(system/vendor|vendor|odm|vendor/odm)/lib(64)?/libcdsprpc\.so                   u:object_r:same_process_hal_file:s0
+/(system/vendor|vendor|odm|vendor/odm)/lib(64)?/libsdsprpc\.so                   u:object_r:same_process_hal_file:s0
+/(system/vendor|vendor|odm|vendor/odm)/lib(64)?/libgralloccore\.so               u:object_r:same_process_hal_file:s0
+/(system/vendor|vendor|odm|vendor/odm)/lib(64)?/libgrallocutils\.so              u:object_r:same_process_hal_file:s0
 
 # RenderScript dependencies.
 # To test: run cts -m CtsRenderscriptTestCases
-/(system/vendor|vendor|odm)/lib(64)?/libRSDriver_adreno\.so           u:object_r:same_process_hal_file:s0
-/(system/vendor|vendor|odm)/lib(64)?/libCB\.so                        u:object_r:same_process_hal_file:s0
-/(system/vendor|vendor|odm)/lib(64)?/libllvm-qgl\.so                  u:object_r:same_process_hal_file:s0
-/(system/vendor|vendor|odm)/lib(64)?/libbccQTI\.so                    u:object_r:same_process_hal_file:s0
-/(system/vendor|vendor|odm)/lib(64)?/libllvm-qcom\.so                 u:object_r:same_process_hal_file:s0
-/(system/vendor|vendor|odm)/lib(64)?/librs_adreno\.so                 u:object_r:same_process_hal_file:s0
-/(system/vendor|vendor|odm)/lib(64)?/librs_adreno_sha1\.so            u:object_r:same_process_hal_file:s0
-/(system/vendor|vendor|odm)/lib(64)?/libqti-perfd-client\.so          u:object_r:same_process_hal_file:s0
+/(system/vendor|vendor|odm|vendor/odm)/lib(64)?/libRSDriver_adreno\.so           u:object_r:same_process_hal_file:s0
+/(system/vendor|vendor|odm|vendor/odm)/lib(64)?/libCB\.so                        u:object_r:same_process_hal_file:s0
+/(system/vendor|vendor|odm|vendor/odm)/lib(64)?/libllvm-qgl\.so                  u:object_r:same_process_hal_file:s0
+/(system/vendor|vendor|odm|vendor/odm)/lib(64)?/libbccQTI\.so                    u:object_r:same_process_hal_file:s0
+/(system/vendor|vendor|odm|vendor/odm)/lib(64)?/libllvm-qcom\.so                 u:object_r:same_process_hal_file:s0
+/(system/vendor|vendor|odm|vendor/odm)/lib(64)?/librs_adreno\.so                 u:object_r:same_process_hal_file:s0
+/(system/vendor|vendor|odm|vendor/odm)/lib(64)?/librs_adreno_sha1\.so            u:object_r:same_process_hal_file:s0
+/(system/vendor|vendor|odm|vendor/odm)/lib(64)?/libqti-perfd-client\.so          u:object_r:same_process_hal_file:s0
 
 # Bluetooth codecs
-/(system/vendor|vendor|odm)/lib(64)?/libaptX_encoder\.so              u:object_r:same_process_hal_file:s0
-/(system/vendor|vendor|odm)/lib(64)?/libaptXHD_encoder\.so            u:object_r:same_process_hal_file:s0
+/(system/vendor|vendor|odm|vendor/odm)/lib(64)?/libaptX_encoder\.so              u:object_r:same_process_hal_file:s0
+/(system/vendor|vendor|odm|vendor/odm)/lib(64)?/libaptXHD_encoder\.so            u:object_r:same_process_hal_file:s0
 
 # IMS
-/(system/vendor|vendor|odm)/lib(64)?/com\.qualcomm\.qti\.uceservice@2\.[0-9]+\.so  u:object_r:same_process_hal_file:s0
-/(system/vendor|vendor|odm)/lib(64)?/com\.qualcomm\.qti\.imscmservice@1\.[0-9]+\.so  u:object_r:same_process_hal_file:s0
-/(system/vendor|vendor|odm)/lib(64)?/com\.qualcomm\.qti\.imscmservice@2\.[0-9]+\.so  u:object_r:same_process_hal_file:s0
-/(system/vendor|vendor|odm)/lib(64)?/lib-imscommon\.so  u:object_r:same_process_hal_file:s0
-/(system/vendor|vendor|odm)/lib(64)?/lib-imsdpl\.so  u:object_r:same_process_hal_file:s0
-/(system/vendor|vendor|odm)/lib(64)?/lib-imsqimf\.so  u:object_r:same_process_hal_file:s0
-/(system/vendor|vendor|odm)/lib(64)?/lib-imsrcsservice\.so  u:object_r:same_process_hal_file:s0
-/(system/vendor|vendor|odm)/lib(64)?/lib-imsservice\.so  u:object_r:same_process_hal_file:s0
-/(system/vendor|vendor|odm)/lib(64)?/lib-imsvtcore\.so  u:object_r:same_process_hal_file:s0
-/(system/vendor|vendor|odm)/lib(64)?/lib-imsvtextutils\.so  u:object_r:same_process_hal_file:s0
-/(system/vendor|vendor|odm)/lib(64)?/lib-imsvt\.so  u:object_r:same_process_hal_file:s0
-/(system/vendor|vendor|odm)/lib(64)?/lib-imsvtutils\.so  u:object_r:same_process_hal_file:s0
-/(system/vendor|vendor|odm)/lib(64)?/lib-imsxml\.so  u:object_r:same_process_hal_file:s0
-/(system/vendor|vendor|odm)/lib(64)?/vendor\.qti\.hardware\.radio\.ims@1.[0-9]+\.so  u:object_r:same_process_hal_file:s0
-/(system/vendor|vendor|odm)/lib(64)?/vendor\.qti\.hardware\.radio\.ims-V5-ndk_platform\.so  u:object_r:same_process_hal_file:s0
-/(system/vendor|vendor|odm)/lib(64)?/vendor\.qti\.ims\.callcapability@1\.[0-9]+\.so  u:object_r:same_process_hal_file:s0
-/(system/vendor|vendor|odm)/lib(64)?/vendor\.qti\.ims\.callinfo@1\.[0-9]+\.so  u:object_r:same_process_hal_file:s0
-/(system/vendor|vendor|odm)/lib(64)?/vendor\.qti\.ims\.configservice@1\.[0-9]+\.so  u:object_r:same_process_hal_file:s0
-/(system/vendor|vendor|odm)/lib(64)?/vendor\.qti\.ims\.connection@1\.[0-9]+\.so  u:object_r:same_process_hal_file:s0
-/(system/vendor|vendor|odm)/lib(64)?/vendor\.qti\.ims\.factory@1\.[0-9]+\.so  u:object_r:same_process_hal_file:s0
-/(system/vendor|vendor|odm)/lib(64)?/vendor\.qti\.ims\.factory@2\.[0-9]+\.so  u:object_r:same_process_hal_file:s0
-/(system/vendor|vendor|odm)/lib(64)?/vendor\.qti\.ims\.rcsconfig@1\.[0-9]+\.so  u:object_r:same_process_hal_file:s0
-/(system/vendor|vendor|odm)/lib(64)?/vendor\.qti\.ims\.rcsconfig@2\.[0-9]+\.so  u:object_r:same_process_hal_file:s0
-/(system/vendor|vendor|odm)/lib(64)?/vendor\.qti\.ims\.rcssip@1\.[0-9]+\.so  u:object_r:same_process_hal_file:s0
-/(system/vendor|vendor|odm)/lib(64)?/vendor\.qti\.ims\.rcsuce@1\.[0-9]+\.so  u:object_r:same_process_hal_file:s0
-/(system/vendor|vendor|odm)/lib(64)?/vendor\.qti\.imsrtpservice@3\.[0-9]+-service-Impl\.so  u:object_r:same_process_hal_file:s0
-/(system/vendor|vendor|odm)/lib(64)?/vendor\.qti\.imsrtpservice@3\.[0-9]+\.so  u:object_r:same_process_hal_file:s0
+/(system/vendor|vendor|odm|vendor/odm)/lib(64)?/com\.qualcomm\.qti\.uceservice@2\.[0-9]+\.so  u:object_r:same_process_hal_file:s0
+/(system/vendor|vendor|odm|vendor/odm)/lib(64)?/com\.qualcomm\.qti\.imscmservice@1\.[0-9]+\.so  u:object_r:same_process_hal_file:s0
+/(system/vendor|vendor|odm|vendor/odm)/lib(64)?/com\.qualcomm\.qti\.imscmservice@2\.[0-9]+\.so  u:object_r:same_process_hal_file:s0
+/(system/vendor|vendor|odm|vendor/odm)/lib(64)?/lib-imscommon\.so  u:object_r:same_process_hal_file:s0
+/(system/vendor|vendor|odm|vendor/odm)/lib(64)?/lib-imsdpl\.so  u:object_r:same_process_hal_file:s0
+/(system/vendor|vendor|odm|vendor/odm)/lib(64)?/lib-imsqimf\.so  u:object_r:same_process_hal_file:s0
+/(system/vendor|vendor|odm|vendor/odm)/lib(64)?/lib-imsrcsservice\.so  u:object_r:same_process_hal_file:s0
+/(system/vendor|vendor|odm|vendor/odm)/lib(64)?/lib-imsservice\.so  u:object_r:same_process_hal_file:s0
+/(system/vendor|vendor|odm|vendor/odm)/lib(64)?/lib-imsvtcore\.so  u:object_r:same_process_hal_file:s0
+/(system/vendor|vendor|odm|vendor/odm)/lib(64)?/lib-imsvtextutils\.so  u:object_r:same_process_hal_file:s0
+/(system/vendor|vendor|odm|vendor/odm)/lib(64)?/lib-imsvt\.so  u:object_r:same_process_hal_file:s0
+/(system/vendor|vendor|odm|vendor/odm)/lib(64)?/lib-imsvtutils\.so  u:object_r:same_process_hal_file:s0
+/(system/vendor|vendor|odm|vendor/odm)/lib(64)?/lib-imsxml\.so  u:object_r:same_process_hal_file:s0
+/(system/vendor|vendor|odm|vendor/odm)/lib(64)?/vendor\.qti\.hardware\.radio\.ims@1.[0-9]+\.so  u:object_r:same_process_hal_file:s0
+/(system/vendor|vendor|odm|vendor/odm)/lib(64)?/vendor\.qti\.hardware\.radio\.ims-V5-ndk_platform\.so  u:object_r:same_process_hal_file:s0
+/(system/vendor|vendor|odm|vendor/odm)/lib(64)?/vendor\.qti\.ims\.callcapability@1\.[0-9]+\.so  u:object_r:same_process_hal_file:s0
+/(system/vendor|vendor|odm|vendor/odm)/lib(64)?/vendor\.qti\.ims\.callinfo@1\.[0-9]+\.so  u:object_r:same_process_hal_file:s0
+/(system/vendor|vendor|odm|vendor/odm)/lib(64)?/vendor\.qti\.ims\.configservice@1\.[0-9]+\.so  u:object_r:same_process_hal_file:s0
+/(system/vendor|vendor|odm|vendor/odm)/lib(64)?/vendor\.qti\.ims\.connection@1\.[0-9]+\.so  u:object_r:same_process_hal_file:s0
+/(system/vendor|vendor|odm|vendor/odm)/lib(64)?/vendor\.qti\.ims\.factory@1\.[0-9]+\.so  u:object_r:same_process_hal_file:s0
+/(system/vendor|vendor|odm|vendor/odm)/lib(64)?/vendor\.qti\.ims\.factory@2\.[0-9]+\.so  u:object_r:same_process_hal_file:s0
+/(system/vendor|vendor|odm|vendor/odm)/lib(64)?/vendor\.qti\.ims\.rcsconfig@1\.[0-9]+\.so  u:object_r:same_process_hal_file:s0
+/(system/vendor|vendor|odm|vendor/odm)/lib(64)?/vendor\.qti\.ims\.rcsconfig@2\.[0-9]+\.so  u:object_r:same_process_hal_file:s0
+/(system/vendor|vendor|odm|vendor/odm)/lib(64)?/vendor\.qti\.ims\.rcssip@1\.[0-9]+\.so  u:object_r:same_process_hal_file:s0
+/(system/vendor|vendor|odm|vendor/odm)/lib(64)?/vendor\.qti\.ims\.rcsuce@1\.[0-9]+\.so  u:object_r:same_process_hal_file:s0
+/(system/vendor|vendor|odm|vendor/odm)/lib(64)?/vendor\.qti\.imsrtpservice@3\.[0-9]+-service-Impl\.so  u:object_r:same_process_hal_file:s0
+/(system/vendor|vendor|odm|vendor/odm)/lib(64)?/vendor\.qti\.imsrtpservice@3\.[0-9]+\.so  u:object_r:same_process_hal_file:s0
 
 # RIL
-/(system/vendor|vendor|odm)/lib(64)?/libril-qc-radioconfig\.so  u:object_r:same_process_hal_file:s0
-/(system/vendor|vendor|odm)/lib(64)?/vendor\.qti\.hardware\.radio\.am@1\.[0-9]+\.so  u:object_r:same_process_hal_file:s0
-/(system/vendor|vendor|odm)/lib(64)?/vendor\.qti\.hardware\.radio\.atcmdfwd@1\.[0-9]+\.so  u:object_r:same_process_hal_file:s0
-/(system/vendor|vendor|odm)/lib(64)?/vendor\.qti\.hardware\.radio\.internal\.deviceinfo@1\.[0-9]+\.so  u:object_r:same_process_hal_file:s0
-/(system/vendor|vendor|odm)/lib(64)?/vendor\.qti\.hardware\.radio\.lpa@1\.[0-9]+\.so  u:object_r:same_process_hal_file:s0
-/(system/vendor|vendor|odm)/lib(64)?/vendor\.qti\.hardware\.radio\.qcrilhook@1\.[0-9]+\.so  u:object_r:same_process_hal_file:s0
-/(system/vendor|vendor|odm)/lib(64)?/vendor\.qti\.hardware\.radio\.qtiradio@1\.[0-9]+\.so  u:object_r:same_process_hal_file:s0
-/(system/vendor|vendor|odm)/lib(64)?/vendor\.qti\.hardware\.radio\.qtiradio-V4-ndk_platform\.so  u:object_r:same_process_hal_file:s0
-/(system/vendor|vendor|odm)/lib(64)?/vendor\.qti\.hardware\.radio\.uim@1\.[0-9]+\.so  u:object_r:same_process_hal_file:s0
-/(system/vendor|vendor|odm)/lib(64)?/vendor\.qti\.hardware\.radio\.uim_remote_client@1\.[0-9]+\.so  u:object_r:same_process_hal_file:s0
-/(system/vendor|vendor|odm)/lib(64)?/vendor\.qti\.hardware\.radio\.uim_remote_server@1\.[0-9]+\.so  u:object_r:same_process_hal_file:s0
+/(system/vendor|vendor|odm|vendor/odm)/lib(64)?/libril-qc-radioconfig\.so  u:object_r:same_process_hal_file:s0
+/(system/vendor|vendor|odm|vendor/odm)/lib(64)?/vendor\.qti\.hardware\.radio\.am@1\.[0-9]+\.so  u:object_r:same_process_hal_file:s0
+/(system/vendor|vendor|odm|vendor/odm)/lib(64)?/vendor\.qti\.hardware\.radio\.atcmdfwd@1\.[0-9]+\.so  u:object_r:same_process_hal_file:s0
+/(system/vendor|vendor|odm|vendor/odm)/lib(64)?/vendor\.qti\.hardware\.radio\.internal\.deviceinfo@1\.[0-9]+\.so  u:object_r:same_process_hal_file:s0
+/(system/vendor|vendor|odm|vendor/odm)/lib(64)?/vendor\.qti\.hardware\.radio\.lpa@1\.[0-9]+\.so  u:object_r:same_process_hal_file:s0
+/(system/vendor|vendor|odm|vendor/odm)/lib(64)?/vendor\.qti\.hardware\.radio\.qcrilhook@1\.[0-9]+\.so  u:object_r:same_process_hal_file:s0
+/(system/vendor|vendor|odm|vendor/odm)/lib(64)?/vendor\.qti\.hardware\.radio\.qtiradio@1\.[0-9]+\.so  u:object_r:same_process_hal_file:s0
+/(system/vendor|vendor|odm|vendor/odm)/lib(64)?/vendor\.qti\.hardware\.radio\.qtiradio-V4-ndk_platform\.so  u:object_r:same_process_hal_file:s0
+/(system/vendor|vendor|odm|vendor/odm)/lib(64)?/vendor\.qti\.hardware\.radio\.uim@1\.[0-9]+\.so  u:object_r:same_process_hal_file:s0
+/(system/vendor|vendor|odm|vendor/odm)/lib(64)?/vendor\.qti\.hardware\.radio\.uim_remote_client@1\.[0-9]+\.so  u:object_r:same_process_hal_file:s0
+/(system/vendor|vendor|odm|vendor/odm)/lib(64)?/vendor\.qti\.hardware\.radio\.uim_remote_server@1\.[0-9]+\.so  u:object_r:same_process_hal_file:s0
 
 # Libs in /vendor/lib/hw/
 # TODO(b/core-sp-hal): Remove once audioserver and its associated libs no longer access vendor
@@ -292,7 +292,7 @@
 /(system/vendor|vendor)/lib(64)?/vendor\.qti\.hardware\.display\.mapperextensions@[0-9]+\.[0-9]+\.so            u:object_r:same_process_hal_file:s0
 
 # Loaded into SurfaceFlinger
-/(system/vendor|vendor|odm)/lib(64)?/libgralloc\.qti\.so            u:object_r:same_process_hal_file:s0
+/(system/vendor|vendor|odm|vendor/odm)/lib(64)?/libgralloc\.qti\.so            u:object_r:same_process_hal_file:s0
 
 # data files
 /data/vendor/audio(/.*)?               u:object_r:audio_vendor_data_file:s0
